@@ -1,10 +1,14 @@
-{% extends 'base.html' %}
-
-{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alvin Cruz CV</title>
+  </head>
+  <body>
     <table>
         <tr>
             <td>
-                <img src="{{ url_for('static', filename='images/alvin.JPG') }}" alt="Photo of Alvin" width="150">
+                <img src="images/alvin.JPG" alt="Photo of Alvin" width="150">
             </td>
             <td>
                 <h1>Alvin Cruz</h1>
@@ -27,17 +31,18 @@
 
     <hr>
 
-    <h3>Certifications</h3>
+    <h3>Certificates</h3>
     <table>
         <tr>
             <td>
                 <a href="https://www.udemy.com/certificate/UC-0b7b8990-40e2-43b3-bdf6-ba49a11efa8e/">
                     <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-0b7b8990-40e2-43b3-bdf6-ba49a11efa8e.jpg"
-                        alt="The Ultimate Flask Course by Anthony Herbert" width="300">
+                        alt="The Ultimate Flask Course by Anthony Herbert" width="350">
                 </a>
             </td>
         </tr>
     </table>
 
     <hr>
-{% endblock %}
+  </body>
+</html>
