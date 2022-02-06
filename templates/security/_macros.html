@@ -1,0 +1,36 @@
+{% macro render_field_with_errors(field) %}
+  <div class="row p-1">
+    <div class="col-4">
+      {{ field.label }}
+    </div>
+    <div class="col-8">
+      {{ field(**kwargs)|safe }}
+
+    {% if field.errors %}
+        <ul class="list-unstyled">
+        {% for error in field.errors %}
+          <li style="color: red;">{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro render_field_with_label(field) %}
+  <div class="row p-2">
+    <div class="col-4">
+      {{ field.label }}
+    </div>
+    <div class="col-8">
+      {{ field(**kwargs)|safe }}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro render_field(field) %}
+<p>
+  {{ field(**kwargs)|safe }}
+</p>
+{% endmacro %}
+
