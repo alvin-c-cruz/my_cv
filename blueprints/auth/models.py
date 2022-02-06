@@ -1,5 +1,5 @@
 from flask_security import UserMixin, RoleMixin
-from accounting import db
+from my_cv import db
 
 roles_users = db.Table('roles_users',
                        db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),
