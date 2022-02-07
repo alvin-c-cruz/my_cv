@@ -1,0 +1,23 @@
+body {
+    background-color: #EAF6F6;
+    }
+
+hr {
+    border-style: dotted none none none;
+    width: 10%;
+    border-color: lightgrey;
+    border-width: 5px;
+    }
+
+h1, h3 {
+    color: #66BFBF;
+}
+
+#profile {
+    border-radius: 100%;
+}
+
+.certificate_img {
+    background-color: #66BFBF;
+    border-radius: 5%;
+}
