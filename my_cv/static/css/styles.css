@@ -1,5 +1,6 @@
 body {
     background-color: #EAF6F6;
+    font-family: "Times New Roman";
     }
 
 hr {
@@ -13,11 +14,20 @@ h1, h3 {
     color: #66BFBF;
 }
 
-#profile {
-    border-radius: 100%;
+#profile-img {
+    border-radius: 50%;
 }
 
 .certificate_img {
     background-color: #66BFBF;
     border-radius: 5%;
+}
+
+#card {
+    margin: 50px;
+    text-align: center;
+}
+
+p {
+    margin: 5px, 0;
 }
