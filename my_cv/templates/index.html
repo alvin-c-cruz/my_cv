@@ -3,22 +3,27 @@
 {% block title %}Alvin Cruz CV{% endblock %}
 
 {% block content %}
-<div id="card">
-    <h1>Alvin Cruz</h1>
-    <img id="profile-img" src="{{ url_for('static', filename='images/alvin.JPG') }}" alt="Photo of Alvin" width="150">
-    <p>A full stack web developer</p>
-    <p>
-        <label>Github: </label>
-        <a href="https://github.com/alvin-c-cruz" target="_blank">alvin-c-cruz</a>
-    </p>
-    <p>
-        <label>Twitter: </label><i ></i>
-        <a href="https://twitter.com/alvinccruz12" target="_blank" class="fa-brands fa-twitter">@alvinccruz12</a>
-    </p>
-    <p>
-        <label>Stack Overflow: </label>
-        <a href="https://stackoverflow.com/users/11421188/alvin-cruz" target="_blank">alvin-cruz</a>
-    </p>
+<div id="card" class="row">
+    <div class="col-4">
+        <h1>Alvin Cruz</h1>
+        <img id="profile-img" src="{{ url_for('static', filename='images/alvin.JPG') }}" alt="Photo of Alvin"
+             width="150">
+        <p>A full stack web developer</p>
+    </div>
+    <div class="col-8 align-left">
+        <p class="contacts">
+            <label>Github: </label>
+            <a href="https://github.com/alvin-c-cruz" target="_blank">alvin-c-cruz</a>
+        </p>
+        <p class="contacts">
+            <label>Twitter: </label><i></i>
+            <a href="https://twitter.com/alvinccruz12" target="_blank" class="fa-brands fa-twitter">@alvinccruz12</a>
+        </p>
+        <p class="contacts">
+            <label>Stack Overflow: </label>
+            <a href="https://stackoverflow.com/users/11421188/alvin-cruz" target="_blank">alvin-cruz</a>
+        </p>
+    </div>
 </div>
 
 <hr>
@@ -28,7 +33,7 @@
     <div class="col-lg-3 col-md-4">
         <a href="https://www.udemy.com/certificate/UC-0b7b8990-40e2-43b3-bdf6-ba49a11efa8e/" target="_blank">
             <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-0b7b8990-40e2-43b3-bdf6-ba49a11efa8e.jpg"
-                         alt="The Ultimate Flask Course by Anthony Herbert" width="350" class="certificate_img">
+                 alt="The Ultimate Flask Course by Anthony Herbert" width="350" class="certificate_img">
         </a>
     </div>
 </div>

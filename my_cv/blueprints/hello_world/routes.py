@@ -7,7 +7,7 @@ bp = Blueprint('hello_world', __name__, template_folder='pages', url_prefix='/he
 
 @bp.route('/', methods=['POST', 'GET'])
 def home():
-    code = ""
+    code = 'print("Hello World!")'
     output = ""
 
     if request.method == 'POST':

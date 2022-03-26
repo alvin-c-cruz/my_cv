@@ -4,15 +4,24 @@
 
 {% block content %}
 <form method="post" action="{{ url_for('hello_world.home') }}">
-    <div>
-        <h3>Code Here</h3>
-        <textarea name="code" cols="30" rows="10">{{ code }}</textarea>
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>Hello World</h1>
+            <p>It a tradition to start programming with printing hello world.</p>
+            <textarea name="code" cols="30" rows="10" class="form-control">{{ code }}</textarea>
+        </div>
+        <div class="col-lg-6">
+            <h1>Output Here</h1>
+            <p>This box will show the result of the codes written in the first <box class=""></box></p>
+            <textarea name="output" cols="30" rows="10" class="form-control">{{ output }}</textarea>
+        </div>
     </div>
-    <div>
-        <h3>Output Here</h3>
-        {{ output }}
+    <div class="row">
+        <div class="offset-5 col-2 offset-5 mt-4">
+            <input type="submit" value="Run" class="btn btn-success form-control">
+        </div>
     </div>
-    <input type="submit" value="Run">
+
 
 </form>
 {% endblock %}
