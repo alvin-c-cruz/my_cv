@@ -1,12 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Alvin Cruz CV</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{  url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Alvin Cruz CV{% endblock %}
+
+{% block content %}
 <div id="card">
     <h1>Alvin Cruz</h1>
     <img id="profile-img" src="{{ url_for('static', filename='images/alvin.JPG') }}" alt="Photo of Alvin" width="150">
@@ -16,8 +12,8 @@
         <a href="https://github.com/alvin-c-cruz" target="_blank">alvin-c-cruz</a>
     </p>
     <p>
-        <label>Twitter: </label>
-        <a href="https://twitter.com/alvinccruz12" target="_blank">@alvinccruz12</a>
+        <label>Twitter: </label><i ></i>
+        <a href="https://twitter.com/alvinccruz12" target="_blank" class="fa-brands fa-twitter">@alvinccruz12</a>
     </p>
     <p>
         <label>Stack Overflow: </label>
@@ -35,15 +31,7 @@
                          alt="The Ultimate Flask Course by Anthony Herbert" width="350" class="certificate_img">
         </a>
     </div>
-    <div class="col-lg-3 col-md-4">
-        <a href="https://chessarena.com/tournaments/16313" target="_blank">
-            <img src="https://wctour-images.worldchess.com/media/tournaments_result/cert_image_525113_16313.png"
-                         alt="FIDE Online Arena" width="350" class="certificate_img">
-        </a>
-    </div>
 </div>
 
 <hr>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock %}

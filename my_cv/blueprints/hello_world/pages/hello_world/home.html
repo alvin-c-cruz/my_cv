@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Hello World {% endblock %}
+
+{% block content %}
+<form method="post" action="{{ url_for('hello_world.home') }}">
+    <div>
+        <h3>Code Here</h3>
+        <textarea name="code" cols="30" rows="10">{{ code }}</textarea>
+    </div>
+    <div>
+        <h3>Output Here</h3>
+        {{ output }}
+
+        {{ error }}
+    </div>
+    <input type="submit" value="Run">
+
+</form>
+{% endblock %}
