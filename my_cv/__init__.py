@@ -8,7 +8,8 @@ def create_app():
 
     @app.route('/')
     def index():
-        return render_template('index.html')
+
+        return render_template('index.html', counter=counter)
 
     for module_ in dir(blueprints):
         module_obj = getattr(blueprints, module_)

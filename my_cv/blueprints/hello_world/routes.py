@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, current_app
+from flask import Blueprint, render_template, request
 import subprocess
 import sys
 
@@ -17,7 +17,7 @@ def home():
             pass
         else:
             process_output = subprocess.run(
-                [sys.executable, "-c", code], capture_output=True, text=True
+                [sys.executable, "-c", code], capture_output=True, text=True, shell=False, check=True
                 )
 
             if process_output.stderr:
